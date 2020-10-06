@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ServerSpaceInvaders</name>
+	<comment></comment>
+	<projects>
+		<project>shared</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>shared-src</name>
+			<type>2</type>
+			<location>D:/Users/Nemo/OneDrive-shared/java/spaceInvaders1987/SpaceInvaders/shared/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>
