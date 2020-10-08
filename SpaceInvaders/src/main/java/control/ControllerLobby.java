@@ -59,7 +59,6 @@ public class ControllerLobby implements GuiLobby.Listener, ServerLooker.Listener
 	// SERVERLOOKER LISTENERS
 	@Override
 	public void slDoneLooking(List<Server> servers){
-		System.out.println("servers: "+servers);
 		this.servers.update(servers);
 		gui.updateServers(servers);
 		gui.isLoading(false,null);

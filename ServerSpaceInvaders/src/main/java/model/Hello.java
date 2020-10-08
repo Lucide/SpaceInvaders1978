@@ -11,13 +11,13 @@ public class Hello extends Runner{
 	private final Listener listener;
 	private final DatagramSocket ds;
 	private final DatagramPacket dp;
-	private final String serverName;
+	// private final String serverName;
 
 	public Hello(DatagramSocket ds, String serverName, InetAddress broadcast, Listener listener){
 		super("Hello");
 		this.listener=listener;
 		this.ds=ds;
-		this.serverName=serverName;
+		// this.serverName=serverName;
 		try{
 			ds.setBroadcast(true);
 		}catch(SocketException ex){

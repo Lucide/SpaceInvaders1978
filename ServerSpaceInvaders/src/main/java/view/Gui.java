@@ -31,7 +31,6 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ListSelectionEvent;
@@ -64,6 +63,7 @@ public class Gui extends JFrame{
 	private final JLabel lbTimeout;
 	private final JScrollPane scLog;
 	private final JScrollPane scClients;
+
 	private final DefaultListModel<String> lmLog;
 	private final DefaultListModel<String> lmClients;
 	private final DefaultListModel<String> lmMatches;
@@ -90,7 +90,7 @@ public class Gui extends JFrame{
 	private Gui(){
 		try{
 			GraphicsEnvironment ge=GraphicsEnvironment.getLocalGraphicsEnvironment();
-			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT,Gui.class.getResourceAsStream("/resources/Futura/Futura Book.ttf")));
+			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT,Gui.class.getResourceAsStream("/Futura/Futura Book.ttf")));
 		}catch(IOException|FontFormatException ex){
 			Co.error("Gui: failed registering fonts");
 		}
@@ -224,7 +224,7 @@ public class Gui extends JFrame{
 		contentPane.add(spTimeout);
 
 		bckHello=new JLabel("");
-		bckHello.setBorder(new LineBorder(Color.WHITE));
+		bckHello.setBorder(null);
 		bckHello.setBounds(9,142,456,27);
 		contentPane.add(bckHello);
 
@@ -239,7 +239,7 @@ public class Gui extends JFrame{
 		contentPane.add(pbHello);
 
 		bckWatchDog=new JLabel("");
-		bckWatchDog.setBorder(new LineBorder(Color.WHITE));
+		bckWatchDog.setBorder(null);
 		bckWatchDog.setBounds(9,178,456,27);
 		contentPane.add(bckWatchDog);
 

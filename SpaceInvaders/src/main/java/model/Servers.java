@@ -3,7 +3,6 @@ package model;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Servers{
 	private List<Server> servers;
@@ -40,12 +39,7 @@ public class Servers{
 				return false;
 			}
 			Server other=(Server)obj;
-			return Objects.equals(ip,other.ip);
-		}
-
-		@Override
-		public String toString(){
-			return "Server [ip="+ip+", name="+name+"]";
+			return ip.hashCode()==other.ip.hashCode();
 		}
 	}
 }

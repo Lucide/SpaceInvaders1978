@@ -83,12 +83,12 @@ public class GuiMatch extends JFrame{
 	}
 
 	public GuiMatch(){
-		imgAlien=new ImageIcon(GuiMatch.class.getResource("/resources/Enemy.gif"));
-		imgNod=new ImageIcon(GuiMatch.class.getResource("/resources/Nod.png"));
+		imgAlien=new ImageIcon(GuiMatch.class.getResource("/Enemy.gif"));
+		imgNod=new ImageIcon(GuiMatch.class.getResource("/Nod.png"));
 
 		try{
 			GraphicsEnvironment ge=GraphicsEnvironment.getLocalGraphicsEnvironment();
-			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT,GuiMatch.class.getResourceAsStream("/resources/Futura/Futura Book.ttf")));
+			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT,GuiMatch.class.getResourceAsStream("/Futura/Futura Book.ttf")));
 		}catch(IOException|FontFormatException ex){
 			Co.error("GuiMatch: failed registering fonts");
 		}
@@ -129,18 +129,18 @@ public class GuiMatch extends JFrame{
 		lbPauseTitle.setBounds(495,23,179,47);
 
 		lbPauseAlien=new JLabel("");
-		lbPauseAlien.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Ship.png")));
+		lbPauseAlien.setIcon(new ImageIcon(GuiMatch.class.getResource("/Ship.png")));
 		lbPauseAlien.setHorizontalAlignment(SwingConstants.CENTER);
 		lbPauseAlien.setBounds(554,405,50,60);
 
 		lbPauseSound2=new JLabel("");
-		lbPauseSound2.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Sound.gif")));
+		lbPauseSound2.setIcon(new ImageIcon(GuiMatch.class.getResource("/Sound.gif")));
 		lbPauseSound2.setHorizontalAlignment(SwingConstants.CENTER);
 		lbPauseSound2.setBounds(585,405,217,75);
 
 		lbPauseSound1=new JLabel("");
 		lbPauseSound1.setHorizontalAlignment(SwingConstants.CENTER);
-		lbPauseSound1.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Sound.gif")));
+		lbPauseSound1.setIcon(new ImageIcon(GuiMatch.class.getResource("/Sound.gif")));
 		lbPauseSound1.setBounds(358,405,217,75);
 
 		lbPauseBar=new JLabel("");
@@ -149,11 +149,11 @@ public class GuiMatch extends JFrame{
 
 		lbPauseImg=new GLabel("");
 		lbPauseImg.setHorizontalAlignment(SwingConstants.CENTER);
-		lbPauseImg.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Promo.png")));
+		lbPauseImg.setIcon(new ImageIcon(GuiMatch.class.getResource("/Promo.png")));
 		lbPauseImg.setBounds(65,18,310,435);
 
 		lbPauseBck=new JLabel("");
-		lbPauseBck.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/PauseBck.png")));
+		lbPauseBck.setIcon(new ImageIcon(GuiMatch.class.getResource("/PauseBck.png")));
 		lbPauseBck.setHorizontalAlignment(SwingConstants.CENTER);
 		lbPauseBck.setBounds(0,0,794,471);
 
@@ -164,12 +164,12 @@ public class GuiMatch extends JFrame{
 		lbTitle.setBounds(307,2,179,47);
 
 		lbBckTv=new JLabel("");
-		lbBckTv.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Vintage.png")));
+		lbBckTv.setIcon(new ImageIcon(GuiMatch.class.getResource("/Vintage.png")));
 		lbBckTv.setHorizontalAlignment(SwingConstants.CENTER);
 		lbBckTv.setBounds(0,0,794,471);
 
 		lbBars=new JLabel("");
-		lbBars.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Bars.gif")));
+		lbBars.setIcon(new ImageIcon(GuiMatch.class.getResource("/Bars.gif")));
 		lbBars.setHorizontalAlignment(SwingConstants.CENTER);
 		lbBars.setBounds(36,114,75,270);
 
@@ -184,12 +184,12 @@ public class GuiMatch extends JFrame{
 		lbNod2.setBounds(684,147,100,90);
 
 		lbPlayer=new GLabel("");
-		lbPlayer.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Ship.png")));
+		lbPlayer.setIcon(new ImageIcon(GuiMatch.class.getResource("/Ship.png")));
 		lbPlayer.setHorizontalAlignment(SwingConstants.CENTER);
 		lbPlayer.setBounds(375,320,75,75);
 
 		lbMate=new GLabel("");
-		lbMate.setIcon(new ImageIcon(GuiMatch.class.getResource("/resources/Mate.png")));
+		lbMate.setIcon(new ImageIcon(GuiMatch.class.getResource("/Mate.png")));
 		lbMate.setHorizontalAlignment(SwingConstants.CENTER);
 		lbMate.setBounds(375,320,75,75);
 

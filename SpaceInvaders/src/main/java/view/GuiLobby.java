@@ -73,7 +73,7 @@ public class GuiLobby extends JFrame{
 	private GuiLobby(){
 		try{
 			GraphicsEnvironment ge=GraphicsEnvironment.getLocalGraphicsEnvironment();
-			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT,GuiMatch.class.getResourceAsStream("/resources/Futura/Futura Book.ttf")));
+			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT,GuiMatch.class.getResourceAsStream("/Futura/Futura Book.ttf")));
 		}catch(IOException|FontFormatException ex){
 			Co.error("GuiLobby: failed registering fonts");
 		}
@@ -90,13 +90,13 @@ public class GuiLobby extends JFrame{
 		containerUi.setOpaque(true);
 		containerUi.setBackground(Color.DARK_GRAY);
 		containerUi.setBounds(0,0,794,472);
-		contentPane.add(containerUi,new Integer(0));
+		contentPane.add(containerUi,Integer.valueOf(0));
 		containerUi.setLayout(null);
 
 		containerPause=new GContainer();
 		containerPause.setFocusable(false);
 		containerPause.setBounds(0,472,794,472);
-		contentPane.add(containerPause,new Integer(1));
+		contentPane.add(containerPause,Integer.valueOf(1));
 		containerPause.setLayout(null);
 
 		lbMessage=new JLabel("message");
@@ -109,13 +109,13 @@ public class GuiLobby extends JFrame{
 		lbLoading=new JLabel("");
 		lbLoading.setBounds(215,5,363,489);
 		containerPause.add(lbLoading);
-		lbLoading.setIcon(new ImageIcon(GuiLobby.class.getResource("/resources/Loading.gif")));
+		lbLoading.setIcon(new ImageIcon(GuiLobby.class.getResource("/Loading.gif")));
 		lbLoading.setHorizontalAlignment(SwingConstants.CENTER);
 
 		lbLoadingBck=new JLabel("");
 		lbLoadingBck.setBounds(0,0,800,500);
 		containerPause.add(lbLoadingBck);
-		lbLoadingBck.setIcon(new ImageIcon(GuiLobby.class.getResource("/resources/PauseBck.png")));
+		lbLoadingBck.setIcon(new ImageIcon(GuiLobby.class.getResource("/PauseBck.png")));
 		lbLoadingBck.setHorizontalAlignment(SwingConstants.CENTER);
 
 		lbTitle=new JLabel("LOBBY");
