@@ -7,7 +7,7 @@
  * in the user manual at https://docs.gradle.org/6.6.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'SpaceInvaders1987'
+rootProject.name = 'SpaceInvaders1978'
 include(':server')
 include(':client')
 include(':shared')
