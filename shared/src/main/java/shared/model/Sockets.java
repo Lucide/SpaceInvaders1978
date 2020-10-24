@@ -10,7 +10,7 @@ public class Sockets{
 	public static final int HELLO_PORT=1235, NORMAL_PORT=1234, HIGHWAY_PORT=1236;
 
 	public static enum Header{
-		NORMAL("SI1987NORMAL"), HIGHWAY("SI1987HIGWAY"), UNKNOWN("");
+		NORMAL("SI1978NORMAL"), HIGHWAY("SI1978HIGWAY"), UNKNOWN("");
 
 		private static int length=0;
 		private byte header[];
