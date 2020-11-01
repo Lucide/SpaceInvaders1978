@@ -1,5 +1,9 @@
 # Space Invaders 1978
 
+<p align="center">
+  <img src="assets/client_gameplay.gif">
+</p>
+
 ## What's this?
 
 It's a proof-of-concept lan multiplayer Space Invaders! It features a GUI Server and many animated GIFs, all rigorously using Swing's absolute layout.
@@ -48,10 +52,6 @@ The original basic rules were maintained: no external dependencies and good ol' 
 * **swing timers powered animations!**\
   Animation use Swing timers, no thread spamming!
 
-<p align="center">
-  <img src="assets/client_gameplay.gif">
-</p>
-
 ## New Features
 
 * **multithreaded stability!**\
@@ -59,11 +59,12 @@ The original basic rules were maintained: no external dependencies and good ol' 
 * **proper real time gui updates!**\
   The gui is managed correctly through the EDT. Finally, Swing done right!
 
-## ~~Gradle Support~~
+## Gradle Support
 
-~~Thanks to [@razvanred99](https://github.com/razvanred99), who helped me implement Gradle support, runnable jars included!~~
+Thanks to [@razvanred99](https://github.com/razvanred99), who smoothed up my introduction to Gradle.\
+Standalone runnable Jars were created with the [Shadow](https://imperceptiblethoughts.com/shadow/) Gradle plugin.
 
-~~This is essential to set up a lightweight CI workflow.~~
+This is essential to set up a lightweight CI workflow.
 
 not ready yet
 
