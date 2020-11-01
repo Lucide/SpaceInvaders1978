@@ -9,7 +9,8 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  release_jars:
+    name: Release runnable Jars
     runs-on: ubuntu-latest
 
     steps:
