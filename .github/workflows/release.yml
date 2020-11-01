@@ -6,7 +6,7 @@ name: Release runnable Jars
 on:
   push:
     tags:
-      - v*
+      - 'v*'
     branches:
       - master
 
