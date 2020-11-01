@@ -32,7 +32,7 @@ jobs:
     - name: Run shadowJar for client
       run: ./gradlew :client:shadowJar
     - name: Create a release
-    - uses: "marvinpinto/action-automatic-releases@latest"
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         prerelease: false
