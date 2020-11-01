@@ -66,8 +66,6 @@ Standalone runnable Jars were created with the [Shadow](https://imperceptibletho
 
 This is essential to set up a lightweight CI workflow.
 
-not ready yet
-
 ## Download
 
 Runnable jars are automatically built with GitHub Actions and are available here:\
