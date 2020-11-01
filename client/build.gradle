@@ -21,6 +21,6 @@ application {
 shadowJar {
     archiveBaseName.set("client")
     archiveClassifier.set("")
-    archiveVersion.set("1.0")
+    archiveVersion.set("1.0.0")
     minimize()
 }

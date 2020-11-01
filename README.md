@@ -69,4 +69,4 @@ This is essential to set up a lightweight CI workflow.
 ## Download
 
 Runnable jars are automatically built with GitHub Actions and are available here:\
-to do
+<https://github.com/Lucide/SpaceInvaders1978/releases>
