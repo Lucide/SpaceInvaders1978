@@ -5,10 +5,10 @@ name: Release runnable Jars
 
 on:
   push:
-    branches:
-      - master
     tags:
       - v*
+    branches:
+      - master
 
 jobs:
   build:
